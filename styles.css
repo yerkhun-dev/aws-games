@@ -1160,3 +1160,17 @@ kbd { min-width: 22px; padding: 4px 5px; border: 1px solid var(--line-bright); b
 .cloudle-word.row-two { top: 105px; }
 .cloudle-word.row-three { top: 152px; }
 .cloudle-art > span { position: absolute; z-index: 2; bottom: 37px; padding: 6px 9px; border: 1px solid rgba(34,197,94,.25); border-radius: 999px; color: #67dc99; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .46rem; letter-spacing: .1em; }
+
+/* Data Pipeline Factory catalog artwork */
+.pipeline-art { min-height: 300px; background: radial-gradient(circle at 52% 45%, rgba(167,139,250,.15), transparent 45%), #080d19; }
+.pipeline-art-grid { position: absolute; inset: 0; opacity: .35; background-image: linear-gradient(rgba(130,113,188,.14) 1px, transparent 1px), linear-gradient(90deg, rgba(130,113,188,.14) 1px, transparent 1px); background-size: 24px 24px; }
+.pipeline-source { position: absolute; z-index: 3; top: 46%; left: 5%; padding: 6px 8px; border: 1px solid rgba(67,214,209,.35); border-radius: 6px; background: #0c2b32; color: #61ddd8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .47rem; }
+.pipeline-art-flow { position: absolute; z-index: 1; top: 50%; left: 15%; right: 8%; height: 2px; background: linear-gradient(90deg, #43d6d1, #a78bfa, #4f8ff7); }
+.pipeline-art-flow i { position: absolute; top: -3px; width: 8px; height: 8px; border-radius: 50%; background: #d8ccff; box-shadow: 0 0 12px #a78bfa; }
+.pipeline-art-flow i:nth-child(1) { left: 10%; } .pipeline-art-flow i:nth-child(2) { left: 38%; } .pipeline-art-flow i:nth-child(3) { left: 66%; } .pipeline-art-flow i:nth-child(4) { left: 91%; }
+.pipeline-node { position: absolute; z-index: 3; display: grid; width: 48px; height: 48px; place-items: center; transform: translate(-50%, -50%); border: 1px solid currentColor; border-radius: 11px; background: #111a2d; box-shadow: 0 0 22px color-mix(in srgb, currentColor 28%, transparent); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .56rem; font-weight: 800; }
+.node-kinesis { top: 50%; left: 27%; color: #d879f2; }
+.node-lambda { top: 32%; left: 46%; color: #ff9f43; }
+.node-s3 { top: 66%; left: 63%; color: #62cf72; }
+.node-redshift { top: 50%; left: 82%; color: #4f8ff7; }
+.pipeline-art > b { position: absolute; z-index: 3; right: 15px; bottom: 18px; color: rgba(85,214,139,.72); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .43rem; letter-spacing: .08em; }

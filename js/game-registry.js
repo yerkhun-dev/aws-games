@@ -101,5 +101,16 @@ window.CLOUD_ARCADE_GAMES = [
     accent: "#22c55e",
     tags: ["Palabras", "Daily", "277 servicios"],
     players: "1 jugador"
+  },
+  {
+    id: "pipeline-factory",
+    title: "Data Pipeline Factory",
+    kicker: "Event-Driven Architecture Lab",
+    description: "Diseña grafos de datos, mueve batches reales y cumple SLOs de rendimiento, seguridad y costo.",
+    status: "available",
+    module: "PipelineFactory",
+    accent: "#a78bfa",
+    tags: ["Simulación", "Data", "11 servicios"],
+    players: "1 jugador"
   }
 ];

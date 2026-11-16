@@ -134,13 +134,24 @@
         </div>`;
     }
 
+    if (game.id === "cloudle") {
+      return `
+        <div class="card-art cloudle-art" aria-hidden="true">
+          <div class="cloudle-art-grid"></div>
+          <div class="cloudle-word row-one"><i>C</i><i>L</i><i>O</i><i>U</i><i>D</i></div>
+          <div class="cloudle-word row-two"><i class="correct">A</i><i class="present">T</i><i>H</i><i>E</i><i>N</i><i>A</i></div>
+          <div class="cloudle-word row-three"><i class="correct">L</i><i class="correct">A</i><i class="correct">M</i><i class="correct">B</i><i class="correct">D</i><i class="correct">A</i></div>
+          <span>DAILY SERVICE</span>
+        </div>`;
+    }
+
     return `
-      <div class="card-art cloudle-art" aria-hidden="true">
-        <div class="cloudle-art-grid"></div>
-        <div class="cloudle-word row-one"><i>C</i><i>L</i><i>O</i><i>U</i><i>D</i></div>
-        <div class="cloudle-word row-two"><i class="correct">A</i><i class="present">T</i><i>H</i><i>E</i><i>N</i><i>A</i></div>
-        <div class="cloudle-word row-three"><i class="correct">L</i><i class="correct">A</i><i class="correct">M</i><i class="correct">B</i><i class="correct">D</i><i class="correct">A</i></div>
-        <span>DAILY SERVICE</span>
+      <div class="card-art pipeline-art" aria-hidden="true">
+        <div class="pipeline-art-grid"></div>
+        <span class="pipeline-source">EVENTS</span>
+        <div class="pipeline-art-flow"><i></i><i></i><i></i><i></i></div>
+        <span class="pipeline-node node-kinesis">KIN</span><span class="pipeline-node node-lambda">λ</span><span class="pipeline-node node-s3">S3</span><span class="pipeline-node node-redshift">RS</span>
+        <b>DATA FLOW: HEALTHY</b>
       </div>`;
   }
 
@@ -221,7 +232,7 @@
         <section class="roadmap-banner">
           <div class="roadmap-icon">＋</div>
           <div><span class="eyebrow">UNA ARCADE QUE CRECE</span><h2>Un hogar para cada nuevo juego</h2><p>El catálogo, la navegación y los récords ya están separados del motor de cada juego.</p></div>
-          <div class="roadmap-steps"><span class="done">9 juegos activos</span><i></i><span class="done">277 servicios catalogados</span><i></i><span>Más desafíos</span></div>
+          <div class="roadmap-steps"><span class="done">10 juegos activos</span><i></i><span class="done">3 simuladores avanzados</span><i></i><span>Más desafíos</span></div>
         </section>
       </main>`;
 
