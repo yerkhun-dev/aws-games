@@ -1,0 +1,26 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+private/
+company-architecture/
+
+# macOS and editor metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+.vscode/
+.idea/
+
+# Temporary output
+*.log
+*.tmp
+*.zip
+node_modules/
+dist/
+coverage/
