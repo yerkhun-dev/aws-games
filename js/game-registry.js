@@ -112,5 +112,16 @@ window.CLOUD_ARCADE_GAMES = [
     accent: "#a78bfa",
     tags: ["Simulación", "Data", "11 servicios"],
     players: "1 jugador"
+  },
+  {
+    id: "iam-labyrinth",
+    title: "IAM Labyrinth",
+    kicker: "Least-Privilege Policy Puzzle",
+    description: "Combina políticas, atraviesa capas de evaluación y concede exactamente los permisos necesarios.",
+    status: "available",
+    module: "IamLabyrinth",
+    accent: "#ff9900",
+    tags: ["IAM", "Seguridad", "14 desafíos"],
+    players: "1 jugador"
   }
 ];

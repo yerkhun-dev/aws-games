@@ -1,0 +1,11 @@
+/* IAM Labyrinth catalog artwork, loaded with the main shell. */
+.iam-art { min-height: 300px; background: radial-gradient(circle at 50% 48%, rgba(255,153,0,.13), transparent 45%), #07131f; }
+.iam-art-grid { position: absolute; inset: 0; opacity: .3; background-image: linear-gradient(rgba(113,149,177,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(113,149,177,.13) 1px, transparent 1px); background-size: 24px 24px; }
+.iam-art-path { position: absolute; z-index: 2; top: 51px; left: 50%; display: flex; align-items: center; gap: 5px; transform: translateX(-50%); }
+.iam-art-path span { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid rgba(255,153,0,.3); border-radius: 8px; background: #11263a; color: #ffb13b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .48rem; }
+.iam-art-path i { color: #536b80; font-size: .55rem; font-style: normal; }
+.iam-policy-card { position: absolute; z-index: 2; top: 112px; left: 50%; display: flex; flex-direction: column; width: 165px; transform: translateX(-50%) rotate(-2deg); padding: 12px; border: 1px solid rgba(69,209,146,.32); border-radius: 10px; background: #0e2432; box-shadow: 0 14px 30px rgba(0,0,0,.32); }
+.iam-policy-card small { color: #738ba0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .42rem; }
+.iam-policy-card strong { margin-top: 6px; color: #52dc99; font-size: .73rem; }
+.iam-policy-card code { margin-top: 5px; color: #a9bac8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .53rem; }
+.iam-decision { position: absolute; z-index: 2; bottom: 35px; left: 50%; transform: translateX(-50%); padding: 6px 10px; border: 1px solid rgba(69,209,146,.28); border-radius: 999px; background: rgba(69,209,146,.08); color: #65dda2; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: .47rem; letter-spacing: .06em; white-space: nowrap; }

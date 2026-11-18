@@ -145,13 +145,23 @@
         </div>`;
     }
 
+    if (game.id === "pipeline-factory") {
+      return `
+        <div class="card-art pipeline-art" aria-hidden="true">
+          <div class="pipeline-art-grid"></div>
+          <span class="pipeline-source">EVENTS</span>
+          <div class="pipeline-art-flow"><i></i><i></i><i></i><i></i></div>
+          <span class="pipeline-node node-kinesis">KIN</span><span class="pipeline-node node-lambda">λ</span><span class="pipeline-node node-s3">S3</span><span class="pipeline-node node-redshift">RS</span>
+          <b>DATA FLOW: HEALTHY</b>
+        </div>`;
+    }
+
     return `
-      <div class="card-art pipeline-art" aria-hidden="true">
-        <div class="pipeline-art-grid"></div>
-        <span class="pipeline-source">EVENTS</span>
-        <div class="pipeline-art-flow"><i></i><i></i><i></i><i></i></div>
-        <span class="pipeline-node node-kinesis">KIN</span><span class="pipeline-node node-lambda">λ</span><span class="pipeline-node node-s3">S3</span><span class="pipeline-node node-redshift">RS</span>
-        <b>DATA FLOW: HEALTHY</b>
+      <div class="card-art iam-art" aria-hidden="true">
+        <div class="iam-art-grid"></div>
+        <div class="iam-art-path"><span>USR</span><i>→</i><span>ID</span><i>→</i><span>PB</span><i>→</i><span>SCP</span><i>→</i><span>AWS</span></div>
+        <div class="iam-policy-card"><small>STATEMENT</small><strong>Allow</strong><code>s3:GetObject</code></div>
+        <div class="iam-decision">✓ ACCESS GRANTED</div>
       </div>`;
   }
 
@@ -232,7 +242,7 @@
         <section class="roadmap-banner">
           <div class="roadmap-icon">＋</div>
           <div><span class="eyebrow">UNA ARCADE QUE CRECE</span><h2>Un hogar para cada nuevo juego</h2><p>El catálogo, la navegación y los récords ya están separados del motor de cada juego.</p></div>
-          <div class="roadmap-steps"><span class="done">10 juegos activos</span><i></i><span class="done">3 simuladores avanzados</span><i></i><span>Más desafíos</span></div>
+          <div class="roadmap-steps"><span class="done">11 juegos activos</span><i></i><span class="done">14 desafíos IAM</span><i></i><span>Más desafíos</span></div>
         </section>
       </main>`;
 
